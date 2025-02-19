@@ -131,7 +131,7 @@ def view_user_actions(message):
 
 # Подключение к базе данных
 def create_connection():
-    conn = sqlite3.connect(r'bot (3).db')
+    conn = sqlite3.connect(r'bot1 (3).db')
     return conn
 def add_frozen_column():
     conn = create_connection()
