@@ -45,7 +45,7 @@ def create_orders_table():
 
 # Функция для создания соединения с базой данных
 def create_connection():
-    conn = sqlite3.connect(r'bot1 (3).db')  # Укажите свой путь к базе данных
+    conn = sqlite3.connect(r'/home/shah2003/T/T/bot1.db')  # Укажите свой путь к базе данных
     return conn
 # Функция для добавления нового столбца в таблицу
 def add_order_number_column():
@@ -131,7 +131,7 @@ def view_user_actions(message):
 
 # Подключение к базе данных
 def create_connection():
-    conn = sqlite3.connect(r'bot1 (3).db')
+    conn = sqlite3.connect(r'/home/shah2003/T/T/bot1.db')
     return conn
 def add_frozen_column():
     conn = create_connection()
