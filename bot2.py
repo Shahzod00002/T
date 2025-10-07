@@ -45,7 +45,7 @@ def create_orders_table():
 
 # Функция для создания соединения с базой данных
 def create_connection():
-    conn = sqlite3.connect(r'/home/shah2003/T/T/T/bot1.db')  # Укажите свой путь к базе данных
+    conn = sqlite3.connect(r'/data/data/com.termux/files/home/T/bot1.db')  # Укажите свой путь к базе данных
     return conn
 # Функция для добавления нового столбца в таблицу
 def add_order_number_column():
@@ -131,7 +131,7 @@ def view_user_actions(message):
 
 # Подключение к базе данных
 def create_connection():
-    conn = sqlite3.connect(r'/home/shah2003/T/T/T/bot1.db')
+    conn = sqlite3.connect(r'/data/data/com.termux/files/home/T/bot1.db')
     return conn
 def add_frozen_column():
     conn = create_connection()
@@ -741,6 +741,7 @@ def clear_cart(message):
 if __name__ == '__main__':
     create_action_log_table()  # Создаем таблицу для логов действий
     bot.polling(none_stop=True, timeout=600)
+
 
 
 
